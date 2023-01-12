@@ -1,9 +1,9 @@
 import random
 
-duzo = 100000000
+duzo = 100000
 Lista = []
 inf=0
-powtorzeniaprocesu = 1
+powtorzeniaprocesu = 100000
 
 for i in range(powtorzeniaprocesu):
     kolo=0
@@ -16,7 +16,8 @@ for i in range(powtorzeniaprocesu):
             kolo=kolo+1
     pi= (kolo/duzo) * 4
     Lista.append(pi)
-    print(inf)
+    if inf % 5 == 0:
+        print(inf)
 
 wynik = sum(Lista)/len(Lista)
 print(wynik)
